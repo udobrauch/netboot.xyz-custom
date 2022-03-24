@@ -3,7 +3,7 @@
 goto ${menu} ||
 
 :custom_menu
-menu udobrauch custom menu
+menu $$username$$ custom menu
 item --gap OS:
 item windows ${space} Windows
 choose menu || goto custom_exit
