@@ -24,7 +24,7 @@ goto ${win_version}
 :image_set
 menu Image
 item Win10_1909_English_x64 Win10_1909_English_x64
-item Win10_20H2_German_x64 Win10_20H2_English_x64
+item Win10_20H2_German_x64 Win10_20H2_German_x64
 choose win_image && goto windows
 
 :pe_arch_set
