@@ -5,7 +5,7 @@
 
 set winpe_arch x64
 set win_image Win10_20H2_English_x64
-set win_base_url $$win_base_url$$
+set win_base_url http://netbootxyz.exxcellent.de
 goto ${menu} ||
 
 :windows
