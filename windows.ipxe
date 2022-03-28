@@ -56,7 +56,7 @@ isset ${win_base_url} && goto boot || echo URL not set... && goto url_set
 :boot
 imgfree
 kernel http://${boot_domain}/wimboot
-initrd -n install.wim    ${win_base_url}/${winpe_arch}/sources/install.wim install.wim
+kernel ${win_base_url}/${winpe_arch}/sources/install.wim
 # initrd ${win_base_url}/configs/${win_image}/install.bat install.bat
 initrd ${win_base_url}/configs/configure.bat configure.bat
 initrd ${win_base_url}/configs/winpeshl.ini winpeshl.ini
