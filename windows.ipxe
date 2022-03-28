@@ -59,6 +59,7 @@ kernel http://${boot_domain}/wimboot
 initrd ${win_base_url}/configs/${win_image}/install.bat install.bat
 initrd ${win_base_url}/configs/configure.bat configure.bat
 initrd ${win_base_url}/configs/winpeshl.ini winpeshl.ini
+initrd -n install.wim    ${win_base_url}/${winpe_arch}/sources/install.wim install.wim ||
 initrd -n bootmgr     ${win_base_url}/${winpe_arch}/bootmgr       bootmgr ||
 initrd -n bootmgr.efi ${win_base_url}/${winpe_arch}/bootmgr.efi   bootmgr.efi ||      
 initrd -n bcd         ${win_base_url}/${winpe_arch}/boot/bcd      bcd ||
